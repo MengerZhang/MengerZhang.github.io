@@ -1,0 +1,111 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>宝宝，我爱你 </title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('fontName.eot');
+			src: local('fontName Regular'),local('fontName'),url('fontName.woff') format('woff'),url('fontName.ttf') format('truetype'),url('fontName.svg#fontName') format('svg');
+			}  /*其中fontName替换为你的字体名称*/
+		@font-face{
+			font-family: iloveyou;
+			src: url('resource/font/槑萌体简.ttf');
+		}
+		#fontlove{
+			font-family: iloveyou;
+		}
+	</style>
+	<link href="css/default.css" tppabs="./css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
+<body>
+	<!--
+	|--------版权信息--------|
+	|制作者：Menger  			|
+	|送给Menger最爱的Alisa	|
+	|禁止盗版					|
+	|-----------------------|
+	-->
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments"><font id="fontlove">宝宝：</font></span><br/>
+				<span class="space"><span class="comments"><font id="fontlove">我爱你</font></span></span><br/>
+				<span class="space"/><span class="comments"><font id="fontlove">从第一次和你聊天时我就对你产生了好感，还记得那天吗？一个红包，一张PS的贺卡，我们就算认识了。然后，我就我爱上了你。我经常找你聊天，你不回复我的时候，我便会担心。你不开心的时候，我特别想安慰。那时，我们的关系貌似是姐弟吧。但是，我终于鼓足勇气，对你说：“我爱你！”。当时我就想：终于有一个能让我爱一辈子，宠一辈子，保护一辈子的人了。我当时的内心别提有多高兴，甚至连觉都没睡好。</font></span><br />
+				<span class="space"/><span class="comments"><font id="fontlove">但是，这也不是一帆风顺的。路上有阴雨，有荆棘，有巨石。我还是爱你，我希望我们能够一起走完这条路，无论有再大的苦，再大的累，我也不会畏惧，我会为了我爱的人努力走好这一路。这是我的选择，我永远不会后悔，你，就是上帝赐给我的最好的礼物吧！上帝的恩赐，我一定要好好珍惜。这辈子我要好好保护你，不让你吃苦受累，不让你受委屈。我会努力撑起这份爱情的。天黑了，没有光亮；这条路，我陪你走完！</font></span><br/>
+				<span class="space"/><span class="comments"><font id="fontlove">不管今世也好来世也好，我所要的只有你。我要与你同坐在有着月光的草坪上，一起遥望着繁星点缀的夜空，讲述那人间古老的爱情神话。</font></span><br/>
+				<span class="space"/><span class="comments"><font id="fontlove">我在想，如果把我们这短短半年的相遇写成小说，会怎样呢？我猜，应该很精彩吧！虽只是短短半年，我却被你深深的迷住了，你可爱，你拥有一颗善良的心。在我心中，你，就是那个十全十美吧！所以我希望睡前吻你，睡时抱你，醒来发现你在我身边；有你的日子，永远都是那么的美好！永远都是那么的鲜花遍地。</font></span><br/>
+				<span class="space"/><span class="comments"><font id="fontlove">我们的心永远在一起，我愿做那天上的星星，永远守护着你；我愿做那地上的花草，永远陪伴着你！我是个厌世的人，本对这世界已无眷恋，自从有了你，我觉得整个世界都在向我点头微笑，你那充满朝气的身影总是伴着月光入我梦来，让我牵挂不停。</font></span><br/>
+				<span class="space"/><span class="comments"><font id="fontlove">我不是弱智，但我会傻傻的爱你到永远！</font></span><br/>
+				<span class="space"/><span class="comments"><font id="fontlove">爱你的萌</font></span>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						宝宝, 这是我们认识的第
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						永远爱你，一辈子，不分离！<br/>
+						<div class="signature">- 最爱你的人</div>
+				</div>
+			</div>
+</div>
+	<div class="bg1">	
+		<div class="main">
+			<footer style="line-height:20px">
+                <div id="copyright">
+                  <p><a href='http://51bbw.cn' target="_blank"></a> 
+                    <a href="http://ymjzy.net" target="_blank"></a>
+                    <a href="" target="_blank"></a></p>
+                </div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2017, 01, 30);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "提醒您：您的浏览器版本过旧^_^<br/>"+
+				"推荐使用 <a href='http://www.firefox.com.cn/' target='_blank'>火狐浏览器<br/>请先升级您的浏览器，效果很炫哦~~"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+    <audio id="bgmMusic" src="resource/mp4/065031e6e254d9a5cb991d1d904b929c.mp3" preload="auto" type="audio/mp3" autoplay="" loop="loop"></audio>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="img/100.jpeg"><img src="img/101.jpeg">
+</body>
+</html>
